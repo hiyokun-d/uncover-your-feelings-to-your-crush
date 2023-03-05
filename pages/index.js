@@ -6,7 +6,7 @@ export default function Home() {
   const [Card1open, setOpen] = useState(false)
   const [Card2open, setCard2open] = useState(false)
   const [Card3open, setCard3open] = useState(false)
-  const [Card4open, setCard4open] = useState(false)
+  const [Card4open] = useState(false)
   setTimeout(() => {
     setOpen(true)
 
