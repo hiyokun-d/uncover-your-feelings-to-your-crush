@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    animation: backgroundChange 1s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 a {
@@ -15,12 +22,16 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@keyframes backgroundChange {
+  0%,100% {
+    background-color: rgb(255, 76, 76);
   }
-  body {
-    color: white;
-    background: black;
+
+  30% {
+    background-color: rgb(255, 132, 132);
+  }
+
+  60% {
+    background-color: rgb(255, 79, 79);
   }
 }
